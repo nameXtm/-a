@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form role="form" th:action="@{/upload}" method="get" enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="exampleInputEmail1">姓名</label>
+        <input type="text" name="name" class="form-control" id="exampleInputEmail1">
+<!--        <input type="text" name="name" class="form-control" id="exampleInputEmail1" placeholder="Enter email">-->
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">年龄</label>
+<!--        <input type="text" name="age" class="form-control" id="exampleInputPassword1" placeholder="Password">-->
+        <input type="text" name="age" class="form-control" id="exampleInputPassword1" >
+    </div>
+    <div class="form-group">
+        <label for="exampleInputFile">体重</label>
+        <input type="text" name="weight" id="exampleInputFile">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputFile">身高</label>
+        <input type="text" name="height" multiple>
+    </div>
+<!--    <div class="checkbox">-->
+<!--        <label>-->
+<!--            <input type="checkbox"> Check me out-->
+<!--        </label>-->
+    </div>
+    <button type="submit" class="btn btn-primary">提交</button>
+</form>
+
+</body>
+</html>
